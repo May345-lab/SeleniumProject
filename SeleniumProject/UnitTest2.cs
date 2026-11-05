@@ -6,6 +6,31 @@ namespace SeleniumProject
 {
     public class UnitTest2
     {
-       //testing out the branches
+        IWebDriver driver;
+        [SetUp]
+        public void Setup()
+        {
+            driver=new ChromeDriver();
+        }
+
+        [Test]
+        public void Test1()
+        {
+            driver.Navigate().GoToUrl("http://www.uitestingplayground.com/");
+            driver.Manage().Window.Maximize();
+
+            IWebElement dynamicId = driver.FindElement(By.XPath("//a[@href='/dynamicid']"));
+            dynamicId.Click();
+
+            Assert.Pass();
+        }
+        [TearDown]
+        public void TearDown()
+        {
+            driver.Close();
+            //testing git push
+            //testing git pull
+            //testing git fetch
+        }
     }
 }
