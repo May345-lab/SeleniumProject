@@ -30,7 +30,6 @@ namespace SeleniumProject
             driver.Close();
             //testing git push
             //testing git pull
-            //testing git fetch
         }
     }
 }
