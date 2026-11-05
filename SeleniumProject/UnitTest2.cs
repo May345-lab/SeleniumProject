@@ -14,5 +14,12 @@ namespace SeleniumProject
             // Add your test logic here
             driver.Quit();
         }
+        public void TestMethod2()
+        {
+            IWebDriver driver = new ChromeDriver();
+            driver.Navigate().GoToUrl("https://www.example.com");
+            // Add your test logic here
+            driver.Quit();
+        }
     }
 }
