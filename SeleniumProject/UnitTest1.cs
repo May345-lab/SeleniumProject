@@ -22,7 +22,7 @@ namespace SeleniumProject
             IWebElement dynamicId = driver.FindElement(By.XPath("//a[@href='/dynamicid']"));
             dynamicId.Click();
 
-            Assert.Pass();
+           
         }
         [TearDown]
         public void TearDown()
