@@ -13,8 +13,8 @@ namespace SeleniumProject
             driver=new ChromeDriver();
         }
 
-        [Test]
-        public void Test1()
+         [Test]
+        public void Test2()
         {
             driver.Navigate().GoToUrl("http://www.uitestingplayground.com/");
             driver.Manage().Window.Maximize();
